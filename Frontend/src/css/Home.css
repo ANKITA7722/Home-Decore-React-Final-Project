@@ -1,0 +1,26 @@
+#cards{
+    margin:30px;
+    text-align: center;
+    border:none;
+    
+}
+
+.button-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; /* Capsule shape */
+    border: none;
+    padding: 5px 20px; /* Slightly stretched width */
+    margin: 5px;
+    text-transform: capitalize;
+  }
+  
+  .button-container img {
+    border-radius: 50%; /* Round shape for the image */
+    height: 50px;
+    width: 50px;
+    border: 5px solid rgb(230, 186, 82);
+    margin-right: 10px; /* Space between image and text */
+  }
+  

@@ -1,0 +1,116 @@
+#header
+{
+    padding: 10px;
+    background-color: lightblue;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.space
+{
+    margin-right: 20px;
+}
+
+h1 
+{
+    text-align: center;
+    color: rgb(50, 124, 184);
+}
+
+#cardData
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer
+{
+    padding: 20px;
+   
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#carticon
+{
+    padding: 2px;
+    background-color: rgb(241, 242, 150);
+    border-radius: 50%;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding-left: 20vh;
+    /* padding-right: 20px; */
+
+}
+#container div{
+   
+    padding: 20px 20px 20px 20px;
+}
+
+#carticon
+{
+    padding: 2px;
+    background-color: rgb(241, 242, 150);
+    border-radius: 50%;
+}
+
+#shoppage
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#shopmenu
+{
+    width: 20%;
+    background-color: rgb(226, 240, 244);
+    height: 300px;
+}
+#shopdata
+{
+    width: 80%;
+}
+
+
+#pro_deatil
+{
+    width: 70%;
+    display: flex;
+    justify-content:center;
+    margin: auto;
+  
+}
+#pro_img
+{
+    width: 30%;
+}
+#pro_desc
+{
+   padding-right: 30px;
+    width: 70%
+}
+
+#paydesign
+{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+#adminDash
+{
+    display: flex;
+  justify-content: space-around;
+  
+}

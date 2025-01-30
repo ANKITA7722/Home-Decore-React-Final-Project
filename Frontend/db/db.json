@@ -1,0 +1,102 @@
+
+    {
+        "adminuser": [
+          {
+            "id": "1",
+            "name": "admin",
+            "adminid": "admin",
+            "password": "admin123"
+          },
+          {
+            "id": "2",
+            "name": "Ankita",
+            "adminid": "anki",
+            "password": "ankita@123"
+          }
+        ],
+
+    "shopping":[
+     {
+         "id":1,
+         "name":"t shirt",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"men",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A9221_330x.jpg?v=1735380877",
+         "type":"new"
+     },
+     {
+         "id":2,
+         "name":"black bag",
+         "price":300,
+         "description":"this is very good t shirt for men",
+         "category":"women",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A9812_a591f5c5-4a5c-4f6b-ac56-9c786cb26989_330x.jpg?v=1735381387",
+         "type":"old"
+
+     },
+     {
+         "id":3,
+         "name":"t shirt",
+         "price":3700,
+         "description":"this is very good t shirt for men",
+         "category":"men",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A0792_330x.jpg?v=1735379960",
+         "type":"new"
+     },
+     {
+         "id":4,
+         "name":"white bag",
+         "price":5000,
+         "description":"this is very good t shirt for men",
+         "category":"kids",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A9781_d65b011f-3a75-49a9-bea2-84a12a15369f_330x.jpg?v=1735379803",
+         "type":"new"
+     },
+     {
+         "id":5,
+         "name":"t shirt",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"women",
+         "image":"https://m.media-amazon.com/images/I/41DEKrbDN1L.jpg",
+         "type":"old"
+     },
+     {
+         "id":6,
+         "name":"red",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"women",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A0781_1c6566b0-8d37-458a-8811-f4038af1ff73_330x.jpg?v=1735379962",
+         "type":"new"
+     },
+     {
+         "id":7,
+         "name":"t shirt",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"women",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A5872_4e7f8c9b-0034-4654-a0e1-c2104914c4ce_330x.jpg?v=1735380197",
+         "type":"old"
+     },
+     {
+         "id":8,
+         "name":"t shirt",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"kids",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A5838_330x.jpg?v=1735380198",
+         "type":"new"
+     },
+     {
+         "id":9,
+         "name":"t shirt",
+         "price":2300,
+         "description":"this is very good t shirt for men",
+         "category":"kids",
+         "image":"https://thedecorkart.com/cdn/shop/files/009A5818_330x.jpg?v=1735380201",
+         "type":"old"
+     }
+    ]
+ }
