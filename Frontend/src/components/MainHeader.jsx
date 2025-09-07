@@ -106,7 +106,7 @@ const MainHeader = () => {
   // const cartLen = mycart.length;
   return (
     <>
-      <Navbar bg="secondary" expand="lg" variant="dark" className="navbar">
+      <Navbar expand="lg" variant="dark" className="navbar">
         <Container>
           <Navbar.Brand as={Link} to="/" className="nav-logo"> OnlineShopping </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">

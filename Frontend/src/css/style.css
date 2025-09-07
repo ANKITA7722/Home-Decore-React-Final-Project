@@ -1,9 +1,12 @@
 #header
 {
-    padding: 10px;
-    background-color: lightblue;
-    text-align: right;
-    position: sticky;
+    text-align: center;
+    padding: 5px;
+    background-color: #8BA888;
+    font-weight: 600;
+    /* text-align: right; */
+    /* position: sticky; */
+    color:white;
     top: 0;
     z-index: 2;
 }
@@ -16,7 +19,7 @@
 h1 
 {
     text-align: center;
-    color: rgb(50, 124, 184);
+    color: lab(50.16% -2.5 -38.17);
 }
 
 #cardData
@@ -29,8 +32,8 @@ h1
 #footer
 {
     padding: 20px;
-   
-    background-color: lightblue;
+   color: white;
+    background-color: #1A2A40;
     border-radius: 10px;
     margin-top: 20px;
 }
