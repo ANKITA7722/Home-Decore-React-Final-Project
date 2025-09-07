@@ -11,9 +11,9 @@ import d6 from "../images/img6.avif";
 import d7 from "../images/img7.avif";
 import d8 from "../images/img8.avif";
 
-import ban1 from "../images/flat-design-interior-design-facebook-template_23-2149638858.jpg";
+import ban1 from "../images/Brown Modern Home Furniture Banner Landscape.png";
 import ban2 from "../images/budget.webp";
-import ban3 from "../images/flat-design-home-template_23-2150567224.jpg";
+import ban3 from "../images/Banner2_516ec488-5ffb-4069-b6cf-cb6a4b6a6490.webp";
 
 import card1 from "../images/Living-room_08c7c47d-5c40-49ac-a82f-4aff17a57308_400x.jpg";
 import card2 from "../images/Pooja-Room_5771fbe0-798c-46dc-8c2e-dcfdd64538f8_400x.webp";
@@ -21,7 +21,7 @@ import card3 from "../images/Garden-room_924f1628-6692-45f5-8861-3b1ab22bca2f_40
 import card4 from "../images/Bedroom_8d1146d0-aeac-46fd-8f14-7408d8912582_400x.webp";
 import card5 from "../images/Bathroom_890c7829-a136-46e4-89c8-2daca171dfbf_400x.webp";
 import card6 from "../images/wallaart.webp";
-import decor from "../images/Modern_Wall_Desktop.webp"
+import decor from "../images/Modern_Wall_Desktop.webp";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -176,38 +176,33 @@ const Home = () => {
         </div>
       </div>
 
-      <Carousel>
-        <Carousel.Item>
-          <img src={ban1} width="100%" height="600px" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={ban2} width="100%" height="600px" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={ban3} width="100%" height="600px" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      {/*============================================================================================= */}
+      <div>
+        <Carousel>
+          <Carousel.Item>
+            <img src={ban1} width="100%" height="600px" />
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={ban2} width="100%" height="600px" />
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={ban3} width="100%" height="600px" />
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
 
-      <div style={{ marginTop: "40px" }}>
-        <span style={{ textAlign: "center" }}>
-          <p style={{ marginTop: "40px" }}>for every space</p>
-          <h2>Shop by Room</h2>
+      {/*============================================================================================= */}
+
+      <div className="CardsContainer">
+        <span className="CardsTop">
+          <p>FOR EVERY SPACE</p>
+          <h2>SHOP BY ROOM</h2>
         </span>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+
+        <div className="CardsContainerBody1">
           <Card id="cards">
             <Card.Img variant="top" src={card1} />
             <Card.Body>
@@ -233,7 +228,8 @@ const Home = () => {
             </Card.Body>
           </Card>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+
+        <div className="CardsContainerBody1">
           <Card id="cards">
             <Card.Img variant="top" src={card5} />
             <Card.Body>
@@ -260,75 +256,79 @@ const Home = () => {
           </Card>
         </div>
       </div>
+
+      {/*============================================================================================= */}
       <div>
-  <img src={decor} style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
-</div>
- 
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>New Arrivals</span>
-</button>
+        <img
+          src={decor}
+          style={{ width: "100%", height: "auto", maxWidth: "100%" }}
+        />
+      </div>
 
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>Bestsellers</span>
-</button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>New Arrivals</span>
+      </button>
 
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>Royal Family Collection</span>
-</button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>Bestsellers</span>
+      </button>
 
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>Table Lamps</span>
-</button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>Royal Family Collection</span>
+      </button>
 
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>Wall Sconces</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>chandeliers</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>floor-lamps</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>wall vases</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>cake & tiered Stands</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>drinkware + bar</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>rooster egg baskets</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>all furniture</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>blue & while ceramics</span>
-</button>
-<button className="button-container">
-  <img src={d1} alt="New Arrival" />
-  <span>handcrafted bras</span>
-</button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>Table Lamps</span>
+      </button>
 
-<div>
-  <h1> for every space</h1>
-</div>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>Wall Sconces</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>chandeliers</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>floor-lamps</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>wall vases</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>cake & tiered Stands</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>drinkware + bar</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>rooster egg baskets</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>all furniture</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>blue & while ceramics</span>
+      </button>
+      <button className="button-container">
+        <img src={d1} alt="New Arrival" />
+        <span>handcrafted bras</span>
+      </button>
 
+      <div>
+        <h1> for every space</h1>
+      </div>
 
       <h1> New Arrival</h1>
       <div id="cardData">{ans}</div>

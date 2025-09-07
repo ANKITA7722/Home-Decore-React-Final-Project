@@ -1,3 +1,23 @@
+
+.CardsContainer{
+  /* display: flex; */
+
+margin-top: 60px;
+font-family: source-sirif-pro;
+font-weight:bold;
+text-align: "center";
+
+}
+.CardsTop{
+  margin-top: 60vh;
+  text-align: center;
+}
+.CardsContainerBody1{
+  display: flex;
+  justify-content: space-around;
+}
+
+
 #cards{
     margin:30px;
     text-align: center;
