@@ -1,29 +1,67 @@
 
-.CardsContainer{
-  /* display: flex; */
-
-margin-top: 60px;
-font-family: source-sirif-pro;
-font-weight:bold;
-text-align: "center";
-
-}
-.CardsTop{
-  margin-top: 60vh;
+.CardsContainer {
+  padding: 40px;
   text-align: center;
 }
-.CardsContainerBody1{
-  display: flex;
-  justify-content: space-around;
+
+.CardsTop h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.CardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 30px;
+}
+
+/* Card styling */
+.CustomCard {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden; /* important for image zoom */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  background: #fff;
+  transition: box-shadow 0.5s ease-in-out; /* shadow smooth */
+}
+
+/* Title styling */
+.CustomCard h3 {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+/* Image styling */
+.CustomCard img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out; /* slow smooth zoom */
+}
+
+/* Hover effect -> only image zooms */
+.CustomCard:hover img {
+  transform: scale(1.10); /* image zooms */
+}
+
+.CustomCard:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* shadow only */
 }
 
 
-#cards{
-    margin:30px;
-    text-align: center;
-    border:none;
-    
+/* Mobile responsive */
+@media (max-width: 576px) {
+  .CardsGrid {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+  .CustomCard h3 {
+    font-size: 0.8rem;
+  }
 }
+
+
 
 .button-container {
     display: inline-flex;
@@ -44,3 +82,7 @@ text-align: "center";
     margin-right: 10px; /* Space between image and text */
   }
   
+#cardData{
+  padding: 60px;
+  background-color: #9e8c83;
+}

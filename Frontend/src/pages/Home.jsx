@@ -15,12 +15,12 @@ import ban1 from "../images/Brown Modern Home Furniture Banner Landscape.png";
 import ban2 from "../images/budget.webp";
 import ban3 from "../images/Banner2_516ec488-5ffb-4069-b6cf-cb6a4b6a6490.webp";
 
-import card1 from "../images/Living-room_08c7c47d-5c40-49ac-a82f-4aff17a57308_400x.jpg";
-import card2 from "../images/Pooja-Room_5771fbe0-798c-46dc-8c2e-dcfdd64538f8_400x.webp";
-import card3 from "../images/Garden-room_924f1628-6692-45f5-8861-3b1ab22bca2f_400x.webp";
-import card4 from "../images/Bedroom_8d1146d0-aeac-46fd-8f14-7408d8912582_400x.webp";
-import card5 from "../images/Bathroom_890c7829-a136-46e4-89c8-2daca171dfbf_400x.webp";
-import card6 from "../images/wallaart.webp";
+import card1 from "../images/Leaving Room/1.png";
+import card2 from "../images/Leaving Room/2.png";
+import card3 from "../images/Leaving Room/3.png";
+import card4 from "../images/Leaving Room/4.png";
+import card5 from "../images/Leaving Room/5.png";
+import card6 from "../images/Leaving Room/6.png";
 import decor from "../images/Modern_Wall_Desktop.webp";
 
 import Button from "react-bootstrap/Button";
@@ -31,6 +31,7 @@ import Row from "react-bootstrap/Row";
 
 import { useDispatch } from "react-redux";
 import { addToCart } from "../cartSlice";
+import CardSlider from "../components/Cards/CardSlider";
 
 const Home = () => {
   const [mydata, setMydata] = useState([]);
@@ -197,65 +198,46 @@ const Home = () => {
       {/*============================================================================================= */}
 
       <div className="CardsContainer">
-        <span className="CardsTop">
-          <p>FOR EVERY SPACE</p>
-          <h2>SHOP BY ROOM</h2>
-        </span>
+  <span className="CardsTop">
+    <p>FOR EVERY SPACE</p>
+    <h2>SHOP BY ROOM</h2>
+  </span>
 
-        <div className="CardsContainerBody1">
-          <Card id="cards">
-            <Card.Img variant="top" src={card1} />
-            <Card.Body>
-              <Card.Title>Leaving Room</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card2} />
-            <Card.Body>
-              <Card.Title>Pooja Room</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card3} />
-            <Card.Body>
-              <Card.Title>Garden</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card4} />
-            <Card.Body>
-              <Card.Title>Bedroom</Card.Title>
-            </Card.Body>
-          </Card>
-        </div>
+  <div className="CardsGrid">
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card1} />
+    </Card>
 
-        <div className="CardsContainerBody1">
-          <Card id="cards">
-            <Card.Img variant="top" src={card5} />
-            <Card.Body>
-              <Card.Title>Bathroom</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card6} />
-            <Card.Body>
-              <Card.Title>Wall Aart</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card5} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card id="cards">
-            <Card.Img variant="top" src={card5} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-            </Card.Body>
-          </Card>
-        </div>
-      </div>
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card2} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card3} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card4} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card5} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card6} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card5} />
+    </Card>
+
+    <Card className="CustomCard">
+      <Card.Img variant="top" src={card5} />
+    </Card>
+  </div>
+</div>
+
 
       {/*============================================================================================= */}
       <div>
@@ -330,8 +312,9 @@ const Home = () => {
         <h1> for every space</h1>
       </div>
 
-      <h1> New Arrival</h1>
-      <div id="cardData">{ans}</div>
+     {/* <h1> New Arrival</h1>
+      <div id="cardData">{ans}</div> */}
+      <CardSlider/>
     </>
   );
 };

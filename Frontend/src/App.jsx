@@ -15,6 +15,7 @@ import InsertProduct from "./admin/InsertProduct";
 import Search from "./pages/Search";
 import KidsCollection from "./pages/KidsCollecton";
 import KitchenAndDining from "./pages/MenCollection";
+import CardSlider from "./components/Cards/CardSlider";
 
 const App=()=>{
   return(
@@ -34,6 +35,7 @@ const App=()=>{
               <Route  path="prodetail/:id" element={<ProductDetail/>}/>
               <Route path="checkout/:amt" element={<CheckOut/>}/>
               <Route path="paydone" element={<PaymentDone/>}/>
+              <Route path="cardslider" element={<CardSlider/>}/>
              </Route>
            </Routes>
            <Routes>
